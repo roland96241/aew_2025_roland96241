@@ -1,22 +1,21 @@
 
 h1 {
-    color: rgb(3, 95, 7);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
+    margin: auto; font-size: 20px;
+
 }
 
 h2 {
-    color: orangered;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;
+    
 }
-
-p {
+ p {
     color: darkblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contenedor-tarjeta {
-    background-color: silver;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,20 +28,25 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.perfil {
-    width: 200px;
-    border-width: 6px;
+.contenedor-tarjeta {
+    width:700px;
+    border-width: 3px;
     border-style: solid;
-    border-color: yellow;
+    border-color: rgb(10, 0, 0);
     margin: 0;
 }
 
 .borde-redondeado {
-    border-radius: 150px;
+    border-radius: px;
 }
 
 #foto-perfil {
-    height: 250px;
+    height: 330px;
     justify-content: center;
     background-color: #9ACBD0;
     align-items: center;
+
+
+
+
+
