@@ -1,0 +1,29 @@
+
+body {
+    background-image: url(../image/IMG-20221126-WA0023.jpg);
+}
+
+nav {
+    max-width: 900px;
+    margin: auto;
+    background-color: #0b192c;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.menu-horizontal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-horizontal > li > a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 15px 20px;
+}
+
+.menu-horizontal > li:hover {
+    background-color: darkorange;
+}
