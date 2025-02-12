@@ -1,0 +1,394 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Base para diseño escalable */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    line-height: 1.6; /* Espaciado de líneas */
+    min-height: 100vh; /* Al menos el alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Menu nuevo*/
+.menu-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*  flanja de Encabezado  */
+.header {
+    background-color: #001c7d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    padding: 5px 5%;
+}
+/*  logo Data Tech Encabezado  */
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 125px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.5);
+}
+.banner-container {
+    background-image: url(../image/Banner/Data-Center-Banner.png);
+    display: flex;
+    padding: 0px 50px;
+    background-size: cover;
+    background-position: center;
+}
+.banner-container .contenedor{
+    margin: 40px 10px;
+}
+img{
+    border-radius: 1px;
+}
+/*  Menu Encabezado  */
+.header .menu-horizontal {
+    background-color: #001c7d;
+    list-style: none;
+    z-index:2;
+}
+.header .menu-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .menu-horizontal li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.header .menu-horizontal a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.header .menu-horizontal li:hover{
+    color: yellow;
+    transform: scale(1.1);
+   
+}
+/* Submenú */
+.menu-horizontal ul li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el submenú respecto al elemento padre */
+    background-color: #001c7d;
+    list-style: none;
+    display: none;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.menu-horizontal ul li .submenu li {
+    border-bottom: 1px solid #575757;
+}
+
+.menu-horizontal ul li .submenu li a {
+    padding: 10px 10px;
+    color: #fff;
+}
+
+
+/* Mostrar submenú al pasar el mouse */
+.menu-horizontal ul li:hover .submenu {
+    display: block;
+}
+
+/*  Boton de busqueda  */
+.header .boton {
+    font-weight: 2000;
+    color: white;
+    padding: 9px 25px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.header .boton:hover{
+    background-color: blue;
+    color: yellow;
+    transform: scale(1.3);
+}
+/*  Texto Titulo Confiabilidad y Vanguardia  */
+h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 46px;
+}
+/*  Texto Bienvenido a Data Tech Company  */
+h2 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.button-nav {
+    display: flex;
+    border-radius: 20px;
+    padding: 5px 22px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+/* Estilo para la imagen */
+.imagen{display:flex}
+.imagen-rect1 {
+    top: 00%;
+    margin-left: 00px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 00px; /* Espacio debajo de la imagen */
+    width: 250px; /* Ancho de la imagen */
+    }
+.imagen-rect2 {
+        top: 50%;
+        margin-left: 00px; /* Espacio entre la imagen y el texto */
+        margin-bottom: 00px; /* Espacio debajo de la imagen */
+        width: 100px; /* Ancho de la imagen */
+        }
+.imagen_whats{margin-right:5px}
+/* Estilo para la imagen */
+.imagen-derecha {
+    width: 100%; /* Ancho de la imagen */
+    padding:15px
+    }
+
+/*  Texto Titulo Acompañamiento en todo momento  */
+h3{
+	
+    color: rgb(0, 0, 0);
+    font-size: 2.75rem;
+}
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/*  Texto Algunos de Nuestros Servicios  */
+h5{
+   
+    color: rgb(0, 0, 0);
+    font-size: 3.2rem;
+}
+
+/*  Pie de Pagina  */
+.footer {
+    background-color: #001c7d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+.footer img {
+    width: 40px;
+    height: 40px;
+}
+.footer .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+.footer .left-align {
+    align-items: flex-start;
+    text-align: left;
+}
+.footer .left-align p {
+    margin: 3px 0;
+}
+.footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.footer .social-icons img {
+    margin: 0;
+}
+.footer .whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer .bottom-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.footer .contact-section {
+    align-items: flex-start;
+    text-align: left;
+}
+.footer .contact-section p {
+    margin: 1px 0;
+    margin-bottom: 1px;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+p {
+    margin: 0;
+}
+
+/*Aquí va el GRID para Nuestros servicios*/
+
+.titulos-de-ns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding:20px
+}
+.card-container-ns {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    
+}   
+
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.item {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .menu-horizontal .nav-links.active li .submenu {
+        position: relative !important;
+        display: block !important;
+    }
+    .footer .content {
+        display: inline-block !important;
+    }
+    h3 {
+        color: rgb(0, 0, 0);
+        font-size: 2.75rem;
+    }
+}
